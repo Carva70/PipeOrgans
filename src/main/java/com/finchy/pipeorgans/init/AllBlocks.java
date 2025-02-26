@@ -18,6 +18,8 @@ import com.finchy.pipeorgans.block.pipes.subbass.SubbassBlock;
 import com.finchy.pipeorgans.block.pipes.subbass.SubbassExtensionBlock;
 import com.finchy.pipeorgans.block.pipes.trompette.TrompetteBlock;
 import com.finchy.pipeorgans.block.pipes.trompette.TrompetteExtensionBlock;
+import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornBlock;
+import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornExtensionBlock;
 import com.finchy.pipeorgans.item.GenericPipeBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -108,6 +110,13 @@ public class AllBlocks {
             () -> new NasardExtensionBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<EnglishHornBlock> ENGLISHHORN = registerPipeBlock("english_horn", "8",
+            () -> new EnglishHornBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<EnglishHornExtensionBlock> ENGLISHHORN_EXTENSION = registerBlockWithoutItem("english_horn_extension",
+            () -> new EnglishHornExtensionBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerPipeBlock(String name, String octave, Supplier<T> block) {

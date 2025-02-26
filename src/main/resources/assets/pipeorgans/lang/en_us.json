@@ -19,6 +19,7 @@
   "block.pipeorgans.subbass": "Subbass",
   "block.pipeorgans.trompette": "Trompette",
   "block.pipeorgans.nasard": "Nasard",
+  "block.pipeorgans.english_horn": "English Horn",
 
   "sounds.pipeorgans.gedeckt_superhigh": "Gedeckt squeals",
   "sounds.pipeorgans.gedeckt_high": "Gedeckt squeaks",
@@ -54,6 +55,12 @@
   "sounds.pipeorgans.trompette_medium": "Trompette speaks",
   "sounds.pipeorgans.trompette_low": "Trompette grumbles",
   "sounds.pipeorgans.trompette_deep": "Trompette rumbles",
+
+  "sounds.pipeorgans.english_horn_superhigh": "English Horn squeals",
+  "sounds.pipeorgans.english_horn_high": "English Horn squeaks",
+  "sounds.pipeorgans.english_horn_medium": "English Horn speaks",
+  "sounds.pipeorgans.english_horn_low": "English Horn grumbles",
+  "sounds.pipeorgans.english_horn_deep": "English Horn rumbles",
 
   "sounds.pipeorgans.nasard_superhigh": "Nasard squeals",
   "sounds.pipeorgans.nasard_high": "Nasard squeaks",

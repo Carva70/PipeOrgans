@@ -52,6 +52,12 @@ public class AllSoundEvents {
     public static final RegistryObject<SoundEvent> TROMPETTE_LOW = registerSoundEvents("trompette_low");
     public static final RegistryObject<SoundEvent> TROMPETTE_DEEP = registerSoundEvents("trompette_deep");
 
+    public static final RegistryObject<SoundEvent> ENGLISHHORN_SUPERHIGH = registerSoundEvents("english_horn_superhigh");
+    public static final RegistryObject<SoundEvent> ENGLISHHORN_HIGH = registerSoundEvents("english_horn_high");
+    public static final RegistryObject<SoundEvent> ENGLISHHORN_MEDIUM = registerSoundEvents("english_horn_medium");
+    public static final RegistryObject<SoundEvent> ENGLISHHORN_LOW = registerSoundEvents("english_horn_low");
+    public static final RegistryObject<SoundEvent> ENGLISHHORN_DEEP = registerSoundEvents("english_horn_deep");
+
     public static final RegistryObject<SoundEvent> NASARD_SUPERHIGH = registerSoundEvents("nasard_superhigh");
     public static final RegistryObject<SoundEvent> NASARD_HIGH = registerSoundEvents("nasard_high");
     public static final RegistryObject<SoundEvent> NASARD_MEDIUM = registerSoundEvents("nasard_medium");

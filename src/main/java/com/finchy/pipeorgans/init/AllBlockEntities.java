@@ -9,6 +9,7 @@ import com.finchy.pipeorgans.block.pipes.nasard.NasardBlockEntity;
 import com.finchy.pipeorgans.block.pipes.piccolo.PiccoloBlockEntity;
 import com.finchy.pipeorgans.block.pipes.subbass.SubbassBlockEntity;
 import com.finchy.pipeorgans.block.pipes.trompette.TrompetteBlockEntity;
+import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -62,6 +63,12 @@ public class AllBlockEntities {
             BLOCK_ENTITIES.register("nasard_block_entity",
                     () -> BlockEntityType.Builder.of(NasardBlockEntity::new, AllBlocks.NASARD.get())
                             .build(null));
+
+    public static final RegistryObject<BlockEntityType> ENGLISHHORN_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("english_horn_block_entity",
+                    () -> BlockEntityType.Builder.of(EnglishHornBlockEntity::new, AllBlocks.ENGLISHHORN.get())
+                            .build(null));
+
 
 
 
