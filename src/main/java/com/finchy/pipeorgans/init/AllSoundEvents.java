@@ -35,6 +35,12 @@ public class AllSoundEvents {
     public static final RegistryObject<SoundEvent> GAMBA_LOW = registerSoundEvents("gamba_low");
     public static final RegistryObject<SoundEvent> GAMBA_DEEP = registerSoundEvents("gamba_deep");
 
+    public static final RegistryObject<SoundEvent> ROHRFLOTE_SUPERHIGH = registerSoundEvents("rohrflote_superhigh");
+    public static final RegistryObject<SoundEvent> ROHRFLOTE_HIGH = registerSoundEvents("rohrflote_high");
+    public static final RegistryObject<SoundEvent> ROHRFLOTE_MEDIUM = registerSoundEvents("rohrflote_medium");
+    public static final RegistryObject<SoundEvent> ROHRFLOTE_LOW = registerSoundEvents("rohrflote_low");
+    public static final RegistryObject<SoundEvent> ROHRFLOTE_DEEP = registerSoundEvents("rohrflote_deep");
+
     public static final RegistryObject<SoundEvent> PICCOLO_SUPERHIGH = registerSoundEvents("piccolo_superhigh");
     public static final RegistryObject<SoundEvent> PICCOLO_HIGH = registerSoundEvents("piccolo_high");
     public static final RegistryObject<SoundEvent> PICCOLO_MEDIUM = registerSoundEvents("piccolo_medium");

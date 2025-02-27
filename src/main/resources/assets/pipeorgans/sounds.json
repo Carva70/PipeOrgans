@@ -168,7 +168,60 @@
     ]
   },
 
+  "rohrflote_superhigh": {
+    "subtitle": "sounds.pipeorgans.rohrflote_superhigh",
+    "sounds": [
+      {
+        "type": "file",
+        "attenuation_distance": 64,
+        "name": "pipeorgans:rohrflote/rh_superhigh"
+      }
+    ]
+  },
 
+  "rohrflote_high": {
+    "subtitle": "sounds.pipeorgans.rohrflote_high",
+    "sounds": [
+      {
+        "type": "file",
+        "attenuation_distance": 64,
+        "name": "pipeorgans:rohrflote/rh_high"
+      }
+    ]
+  },
+
+  "rohrflote_medium": {
+    "subtitle": "sounds.pipeorgans.rohrflote_medium",
+    "sounds": [
+      {
+        "type": "file",
+        "attenuation_distance": 64,
+        "name": "pipeorgans:rohrflote/rh_medium"
+      }
+    ]
+  },
+
+  "rohrflote_low": {
+    "subtitle": "sounds.pipeorgans.rohrflote_low",
+    "sounds": [
+      {
+        "type": "file",
+        "attenuation_distance": 64,
+        "name": "pipeorgans:rohrflote/rh_low"
+      }
+    ]
+  },
+
+  "rohrflote_deep": {
+    "subtitle": "sounds.pipeorgans.rohrflote_deep",
+    "sounds": [
+      {
+        "type": "file",
+        "attenuation_distance": 64,
+        "name": "pipeorgans:rohrflote/rh_deep"
+      }
+    ]
+  },
 
   "piccolo_superhigh": {
     "subtitle": "sounds.pipeorgans.piccolo_superhigh",
