@@ -54,6 +54,12 @@ public class AllPartialModels {
     ENGLISHHORN_MOUTH_LARGE = block("english_horn/eh_large_mouth"),
     ENGLISHHORN_MOUTH_HUGE = block("english_horn/eh_huge_mouth"),
 
+    VOXHUMANA_MOUTH_TINY = block("vox_humana/vh_tiny_mouth"),
+    VOXHUMANA_MOUTH_SMALL = block("vox_humana/vh_small_mouth"),
+    VOXHUMANA_MOUTH_MEDIUM = block("vox_humana/vh_medium_mouth"),
+    VOXHUMANA_MOUTH_LARGE = block("vox_humana/vh_large_mouth"),
+    VOXHUMANA_MOUTH_HUGE = block("vox_humana/vh_huge_mouth"),
+
     NASARD_MOUTH_TINY = block("nasard/n_tiny_mouth"),
     NASARD_MOUTH_SMALL = block("nasard/n_small_mouth"),
     NASARD_MOUTH_MEDIUM = block("nasard/n_medium_mouth"),

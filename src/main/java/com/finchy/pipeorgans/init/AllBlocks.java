@@ -22,6 +22,8 @@ import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornBlock;
 import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornExtensionBlock;
 import com.finchy.pipeorgans.block.pipes.rohrflote.RohrfloteBlock;
 import com.finchy.pipeorgans.block.pipes.rohrflote.RohrfloteExtensionBlock;
+import com.finchy.pipeorgans.block.pipes.voxhumana.VoxHumanaBlock;
+import com.finchy.pipeorgans.block.pipes.voxhumana.VoxHumanaExtensionBlock;
 import com.finchy.pipeorgans.item.GenericPipeBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -126,6 +128,14 @@ public class AllBlocks {
 
     public static final RegistryObject<RohrfloteExtensionBlock> ROHRFLOTE_EXTENSION = registerBlockWithoutItem("rohrflote_extension",
             () -> new RohrfloteExtensionBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<VoxHumanaBlock> VOXHUMANA = registerPipeBlock("vox_humana", "8",
+            () -> new VoxHumanaBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<VoxHumanaExtensionBlock> VOXHUMANA_EXTENSION = registerBlockWithoutItem("vox_humana_extension",
+            () -> new VoxHumanaExtensionBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .requiresCorrectToolForDrops()));
 
 

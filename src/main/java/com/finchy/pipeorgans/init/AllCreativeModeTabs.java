@@ -28,6 +28,7 @@ public class AllCreativeModeTabs {
                         output.accept(AllBlocks.SUBBASS.get());
                         output.accept(AllBlocks.ENGLISHHORN.get());
                         output.accept(AllBlocks.ROHRFLOTE.get());
+                        output.accept(AllBlocks.VOXHUMANA.get());
                         output.accept(com.simibubi.create.AllBlocks.STEAM_WHISTLE.get());
                         output.accept(AllBlocks.BASE.get());
                         output.accept(AllBlocks.WINDCHEST_MASTER.get());
