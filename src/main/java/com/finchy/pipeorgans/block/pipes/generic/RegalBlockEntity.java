@@ -50,10 +50,16 @@ public class RegalBlockEntity extends GenericPipeBlockEntity {
 
     @Override
     public void createSteamJet(Generic.WhistleSize size) {
-        float yOffset = 0.125f;
+        float yOffset = -0.025f;
+        float xOffset = 0.025f;
         double yPos = ((double) pitch /4) + 1 + yOffset;
-        Vec3 v = new Vec3(0, yPos, 0).add(Vec3.atBottomCenterOf(worldPosition));
-        Vec3 m = new Vec3(0, 1, 0);
-        level.addParticle(new SteamJetParticleData(1), v.x, v.y, v.z, m.x, m.y, m.z);
+        Vec3 v = new Vec3(xOffset, yPos, 0).add(Vec3.atBottomCenterOf(worldPosition));
+        Vec3 m = new Vec3(1, 0, 0);
+
+        if (pitch != 0) {
+            level.addParticle(new SteamJetParticleData(1), v.x, v.y, v.z, m.x, m.y, m.z);
+            level.addParticle(new SteamJetParticleData(1), v.x, v.y, v.z, -m.x, m.y, m.z);
+        }
+
     }
 }
