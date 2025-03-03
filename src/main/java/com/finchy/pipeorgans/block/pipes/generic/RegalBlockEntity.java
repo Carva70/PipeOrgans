@@ -58,7 +58,6 @@ public class RegalBlockEntity extends GenericPipeBlockEntity {
 
         if (pitch != 0) {
             level.addParticle(new SteamJetParticleData(1), v.x, v.y, v.z, m.x, m.y, m.z);
-            level.addParticle(new SteamJetParticleData(1), v.x, v.y, v.z, -m.x, m.y, m.z);
         }
 
     }
