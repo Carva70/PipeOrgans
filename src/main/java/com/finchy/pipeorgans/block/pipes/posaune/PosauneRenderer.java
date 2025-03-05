@@ -42,23 +42,32 @@ public class PosauneRenderer extends SafeBlockEntityRenderer<PosauneBlockEntity>
         float offset = be.animation.getValue(partialTicks);
         if (be.animation.getChaseTarget() > 0 && be.animation.getValue() > 0.5f) {
             float wiggleProgress = (AnimationTickHolder.getTicks(be.getLevel()) + partialTicks) /8f;
-            offset -= (Math.sin(wiggleProgress * (2 * Mth.PI) * (4)) / 16f);
+            offset -= (Math.sin(wiggleProgress * (2 * Mth.PI) * (6 - size.ordinal())) / 16f);
         }
 
-        CachedBufferer.partial(cover, blockState)
-                .centre()
-                .unCentre()
-                .translateY((double) 4 /16 + be.getPitch() + 0.75)
-                .translateZ((double) switch (size) {
-                    case TINY -> 6;
-                    case SMALL -> 5;
-                    case MEDIUM -> 4;
-                    case LARGE -> 3;
-                    case HUGE -> 2;
-                } /16)
-                .rotateX(-offset*16 - 15)
-                .light(light)
-                .renderInto(ms, bufferSource.getBuffer(RenderType.solid()));
+        if (be.getPitch() != 0) {
+            CachedBufferer.partial(cover, blockState)
+                    .centre()
+                    .rotateY(AngleHelper.horizontalAngle(direction.getOpposite()))
+                    .unCentre()
+                    .translateY((double) 4 /16 + be.getPitch() + 0.75 + (double) switch (size) {
+                        case TINY -> 0.059;
+                        case SMALL -> 0.059;
+                        case MEDIUM -> 0.059;
+                        case LARGE -> 0.059;
+                        case HUGE -> 0;
+                    })
+                    .translateZ((double) switch (size) {
+                        case TINY -> 6;
+                        case SMALL -> 5;
+                        case MEDIUM -> 4;
+                        case LARGE -> 3;
+                        case HUGE -> 2;
+                    } /16)
+                    .rotateX(-offset*16 - 15)
+                    .light(light)
+                    .renderInto(ms, bufferSource.getBuffer(RenderType.solid()));
+        }
 
         CachedBufferer.partial(mouth, blockState)
                 .centre()

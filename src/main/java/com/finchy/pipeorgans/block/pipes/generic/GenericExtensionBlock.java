@@ -1,5 +1,7 @@
 package com.finchy.pipeorgans.block.pipes.generic;
 
+import org.jetbrains.annotations.Nullable;
+
 import com.finchy.pipeorgans.block.Generic;
 import com.finchy.pipeorgans.init.AllShapes;
 import com.simibubi.create.content.equipment.wrench.IWrenchable;
@@ -10,6 +12,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -19,6 +22,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -27,6 +32,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.registries.RegistryObject;
 
 public class GenericExtensionBlock extends Block implements IWrenchable {
+
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     public static final EnumProperty<Generic.QuadrupleExtensionShape> SHAPE =
             EnumProperty.create("shape", Generic.QuadrupleExtensionShape.class);
@@ -37,6 +44,7 @@ public class GenericExtensionBlock extends Block implements IWrenchable {
     public GenericExtensionBlock(Properties pProperties) {
         super(pProperties);
         registerDefaultState(defaultBlockState()
+                .setValue(FACING, Direction.NORTH)
                 .setValue(SHAPE, Generic.QuadrupleExtensionShape.DOUBLE)
                 .setValue(SIZE, Generic.WhistleSize.MEDIUM));
     }
@@ -48,7 +56,7 @@ public class GenericExtensionBlock extends Block implements IWrenchable {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        super.createBlockStateDefinition(pBuilder.add(SHAPE, SIZE));
+        super.createBlockStateDefinition(pBuilder.add(FACING, SHAPE, SIZE));
     }
 
     @Override

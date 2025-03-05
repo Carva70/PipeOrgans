@@ -1,6 +1,7 @@
 package com.finchy.pipeorgans.block.pipes.posaune;
 
 import com.finchy.pipeorgans.block.Generic;
+import com.finchy.pipeorgans.block.pipes.generic.GenericPipeBlock;
 import com.finchy.pipeorgans.block.pipes.generic.PedalPipeBlock;
 import com.finchy.pipeorgans.init.AllBlockEntities;
 import com.finchy.pipeorgans.init.AllBlocks;
@@ -12,6 +13,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.core.Direction;
 
 public class PosauneBlock extends PedalPipeBlock {
 
@@ -32,6 +34,7 @@ public class PosauneBlock extends PedalPipeBlock {
         Generic.WhistleSize size = base.getValue(SIZE);
         SoundType soundtype = base.getSoundType();
         BlockPos currentPos = pPos.above();
+        Direction facing = base.getValue(FACING).getOpposite();
 
         float pVolume = (soundtype.getVolume() + 1.0F) / 2.0F;
         SoundEvent growSound = SoundEvents.NOTE_BLOCK_XYLOPHONE.get();
@@ -50,7 +53,8 @@ public class PosauneBlock extends PedalPipeBlock {
                 return;
 
             pLevel.setBlock(currentPos, AllBlocks.POSAUNE_EXTENSION.get().defaultBlockState()
-                    .setValue(SIZE, size), 3);
+                    .setValue(SIZE, size)
+                    .setValue(GenericPipeBlock.FACING, facing), 3);
             if (soundtype != null) {
                 float pPitch = (float) Math.pow(2, -i / 12.0);
                 pLevel.playSound(null, currentPos, growSound, SoundSource.BLOCKS, pVolume / 4f, pPitch);
