@@ -52,6 +52,11 @@ public class AllSoundEvents {
     public static final RegistryObject<SoundEvent> SUBBASS_LOW = registerSoundEvents("subbass_low");
     public static final RegistryObject<SoundEvent> SUBBASS_DEEP = registerSoundEvents("subbass_deep");
 
+    public static final RegistryObject<SoundEvent> POSAUNE_HIGH = registerSoundEvents("posaune_high");
+    public static final RegistryObject<SoundEvent> POSAUNE_MEDIUM = registerSoundEvents("posaune_medium");
+    public static final RegistryObject<SoundEvent> POSAUNE_LOW = registerSoundEvents("posaune_low");
+    public static final RegistryObject<SoundEvent> POSAUNE_DEEP = registerSoundEvents("posaune_deep");
+
     public static final RegistryObject<SoundEvent> TROMPETTE_SUPERHIGH = registerSoundEvents("trompette_superhigh");
     public static final RegistryObject<SoundEvent> TROMPETTE_HIGH = registerSoundEvents("trompette_high");
     public static final RegistryObject<SoundEvent> TROMPETTE_MEDIUM = registerSoundEvents("trompette_medium");

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "size=small,shape=quad": { "model":  "pipeorgans:block/posaune/extension/ps_small_double" },
+    "size=small,shape=quad_connected": { "model":  "pipeorgans:block/posaune/extension/ps_small_double_connected" },
+
+    "size=medium,shape=quad": { "model":  "pipeorgans:block/posaune/extension/ps_medium_double" },
+    "size=medium,shape=quad_connected": { "model":  "pipeorgans:block/posaune/extension/ps_medium_double_connected" },
+
+    "size=large,shape=quad": { "model":  "pipeorgans:block/posaune/extension/ps_large_double" },
+    "size=large,shape=quad_connected": { "model":  "pipeorgans:block/posaune/extension/ps_large_double_connected" },
+
+    "size=huge,shape=quad": { "model":  "pipeorgans:block/posaune/extension/ps_huge_double" },
+    "size=huge,shape=quad_connected": { "model":  "pipeorgans:block/posaune/extension/ps_huge_double_connected" }
+  }
+}

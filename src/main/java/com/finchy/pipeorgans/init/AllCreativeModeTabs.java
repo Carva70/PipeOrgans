@@ -26,6 +26,7 @@ public class AllCreativeModeTabs {
                         output.accept(AllBlocks.GAMBA.get());
                         output.accept(AllBlocks.NASARD.get());
                         output.accept(AllBlocks.SUBBASS.get());
+                        output.accept(AllBlocks.POSAUNE.get());
                         output.accept(AllBlocks.ENGLISHHORN.get());
                         output.accept(AllBlocks.ROHRFLOTE.get());
                         output.accept(AllBlocks.VOXHUMANA.get());

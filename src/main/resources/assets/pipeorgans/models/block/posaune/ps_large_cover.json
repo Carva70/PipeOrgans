@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "pipeorgans:block/posaune",
+		"particle": "pipeorgans:block/particle/posaune_particle"
+	},
+	"elements": [
+		{
+			"name": "rim_medium",
+			"from": [4, 0, 1],
+			"to": [12, 1, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [10.5, 12, 11.5, 12.125], "texture": "#0", "cullface": "up"},
+				"east": {"uv": [10.5, 12, 11.5, 12.125], "texture": "#0", "cullface": "up"},
+				"south": {"uv": [10.5, 12, 11.5, 12.125], "texture": "#0", "cullface": "up"},
+				"west": {"uv": [10.5, 12, 11.5, 12.125], "texture": "#0", "cullface": "up"},
+				"up": {"uv": [10.5, 12.375, 11.5, 13.25], "texture": "#0", "cullface": "up"},
+				"down": {"uv": [0.5, 14.375, 1.5, 15.375], "texture": "#0", "cullface": "up"}
+			}
+		}
+	]
+}

@@ -42,6 +42,15 @@ public class AllPartialModels {
     SUBBASS_MOUTH_LARGE = block("subbass/s_large_mouth"),
     SUBBASS_MOUTH_HUGE = block("subbass/s_huge_mouth"),
 
+    POSAUNE_MOUTH_SMALL = block("posaune/ps_small_mouth"),
+    POSAUNE_MOUTH_MEDIUM = block("posaune/ps_medium_mouth"),
+    POSAUNE_MOUTH_LARGE = block("posaune/ps_large_mouth"),
+    POSAUNE_MOUTH_HUGE = block("posaune/ps_huge_mouth"),
+    POSAUNE_COVER_SMALL = block("posaune/ps_small_cover"),
+    POSAUNE_COVER_MEDIUM = block("posaune/ps_medium_cover"),
+    POSAUNE_COVER_LARGE = block("posaune/ps_large_cover"),
+    POSAUNE_COVER_HUGE = block("posaune/ps_huge_cover"),
+
     TROMPETTE_MOUTH_TINY = block("trompette/t_tiny_mouth"),
     TROMPETTE_MOUTH_SMALL = block("trompette/t_small_mouth"),
     TROMPETTE_MOUTH_MEDIUM = block("trompette/t_medium_mouth"),

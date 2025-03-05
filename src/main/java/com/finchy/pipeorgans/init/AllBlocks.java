@@ -16,6 +16,8 @@ import com.finchy.pipeorgans.block.pipes.piccolo.PiccoloBlock;
 import com.finchy.pipeorgans.block.pipes.piccolo.PiccoloExtensionBlock;
 import com.finchy.pipeorgans.block.pipes.subbass.SubbassBlock;
 import com.finchy.pipeorgans.block.pipes.subbass.SubbassExtensionBlock;
+import com.finchy.pipeorgans.block.pipes.posaune.PosauneBlock;
+import com.finchy.pipeorgans.block.pipes.posaune.PosauneExtensionBlock;
 import com.finchy.pipeorgans.block.pipes.trompette.TrompetteBlock;
 import com.finchy.pipeorgans.block.pipes.trompette.TrompetteExtensionBlock;
 import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornBlock;
@@ -96,6 +98,14 @@ public class AllBlocks {
 
     public static final RegistryObject<SubbassExtensionBlock> SUBBASS_EXTENSION = registerBlockWithoutItem("subbass_extension",
             () -> new SubbassExtensionBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PosauneBlock> POSAUNE = registerPipeBlock("posaune",  "16",
+            () -> new PosauneBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PosauneExtensionBlock> POSAUNE_EXTENSION = registerBlockWithoutItem("posaune_extension",
+            () -> new PosauneExtensionBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<TrompetteBlock> TROMPETTE = registerPipeBlock("trompette", "8",

@@ -205,4 +205,8 @@ public class GenericPipeBlockEntity extends SmartBlockEntity implements IHaveGog
             return null;
         return tank.getControllerBE();
     }
+
+    public int getPitch() {
+        return this.pitch;
+    }
 }

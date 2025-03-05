@@ -8,6 +8,7 @@ import com.finchy.pipeorgans.block.pipes.gedeckt.GedecktBlockEntity;
 import com.finchy.pipeorgans.block.pipes.nasard.NasardBlockEntity;
 import com.finchy.pipeorgans.block.pipes.piccolo.PiccoloBlockEntity;
 import com.finchy.pipeorgans.block.pipes.subbass.SubbassBlockEntity;
+import com.finchy.pipeorgans.block.pipes.posaune.PosauneBlockEntity;
 import com.finchy.pipeorgans.block.pipes.trompette.TrompetteBlockEntity;
 import com.finchy.pipeorgans.block.pipes.englishhorn.EnglishHornBlockEntity;
 import com.finchy.pipeorgans.block.pipes.voxhumana.VoxHumanaBlockEntity;
@@ -54,6 +55,11 @@ public class AllBlockEntities {
     public static final RegistryObject<BlockEntityType> SUBBASS_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("subbass_block_entity",
                     () -> BlockEntityType.Builder.of(SubbassBlockEntity::new, AllBlocks.SUBBASS.get())
+                            .build(null));
+
+    public static final RegistryObject<BlockEntityType> POSAUNE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("posaune_block_entity",
+                    () -> BlockEntityType.Builder.of(PosauneBlockEntity::new, AllBlocks.POSAUNE.get())
                             .build(null));
 
     public static final RegistryObject<BlockEntityType> TROMPETTE_BLOCK_ENTITY =
